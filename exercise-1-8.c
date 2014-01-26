@@ -7,13 +7,7 @@ main()
     counter = 0;
 
     while ((character = getchar()) != EOF)
-    {
-        if (character == '\n')
+        if (character == '\n' || character == '\t' || character == ' ')
             ++counter;
-        if (character == '\t')
-            ++counter;
-        if (character == ' ')
-            ++counter;
-    }
     printf("%ld\n", counter);
 }
